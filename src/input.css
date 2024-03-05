@@ -46,23 +46,23 @@
 }
 
 #s {
-  background-image: url("images/letter/1.png");
+  background-image: url("../images/letter/1.png");
 }
 
 #d {
-  background-image: url("images/letter/2.png");
+  background-image: url("../images/letter/2.png");
 }
 
 #g {
-  background-image: url("images/letter/3.png");
+  background-image: url("../images/letter/3.png");
 }
 
 #one {
-  background-image: url("images/letter/4.png");
+  background-image: url("../images/letter/4.png");
 }
 
 #seven {
-  background-image: url("images/letter/5.png");
+  background-image: url("../images/letter/5.png");
 }
 
 /* links hover */
