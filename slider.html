@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex">
+      <div
+        class="bg-red-400 rounded-full w-[500px] h-[500px] relative transition-transform duration-300"
+      >
+        <div class="one holder top-0 left-1/2">hello</div>
+        <div
+          class="two absolute w-[50px] translate-y-[100%] translate-x-[-50%] bg-blue-400 bottom-0 left-1/2"
+        >
+          hello madlang people
+        </div>
+        <div
+          class="three absolute w-[50px] translate-y-[-50%] translate-x-[-100%] bg-blue-400 top-[50%] left-0"
+        >
+          hello madlang people
+        </div>
+        <div
+          class="four absolute w-[50px] translate-y-[-50%] translate-x-[100%] bg-blue-400 top-[50%] right-0"
+        >
+          hello madlang people
+        </div>
+        <div class="test"></div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">1</div>
+          <div class="swiper-slide">2</div>
+          <div class="swiper-slide">3</div>
+          <div class="swiper-slide">4</div>
+        </div>
+        <div class="swiper-button-next invisible"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+        },
+      });
+    </script>
+    <script>
+      let degrees = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        const nextDesc = document.querySelector(".swiper-button-next");
+        const redDiv = document.querySelector(".bg-red-400");
+        redDiv.addEventListener("click", function () {
+          degrees = degrees + 90;
+          redDiv.style.transform = `rotate(${degrees}deg)`;
+          nextDesc.click();
+        });
+      });
+    </script>
+  </body>
+</html>

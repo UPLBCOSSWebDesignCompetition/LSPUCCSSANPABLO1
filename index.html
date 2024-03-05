@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDG Landing Page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="images/sirkol.png" style="border-radius: 50%">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        font-family: Poppins;
+        font-weight: 500;
+      }
+
+      #future:hover{
+        background-color: rgb(255, 255, 255);
+        color: white;
+      }
+
+      .text-center {
+        position: relative;
+      }
+      .text-center h1 {
+        opacity: 0;
+        position: relative;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <div
+        id="navbar"
+        class="container mx-auto px-6 py-8 flex justify-between items-center"
+      >
+        <img
+          src="images/sirkol.png"
+          alt=""
+          class="rounded-full size-[5rem]"
+        />
+        <ul class="space-x-4 hidden md:flex">
+          <li>
+            <a href="#" class="text-l font-semibold uppercase text-white"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="text-l font-semibold uppercase text-white"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#goals" class="text-l font-semibold uppercase text-white"
+              >Goals</a
+            >
+          </li>
+        </ul>
+        <div id="menu" class="md:hidden">
+          <i class="fa fa-2x fa-bars text-white"></i>
+        </div>
+        <div id="close" class="md:hidden hidden">
+          <i class="fa fa-2x fa-times text-white"></i>
+        </div>
+      </div>
+
+      <!-- SIDE BAR FOR THE RESPONSIVENESS OF THE WEBSITE -->
+      <div
+        id="sidebar"
+        class="fixed w-[60%] h-screen right-[-100%] transition-all duration-300 ease-in-out md:hidden backdrop-blur-2xl z-[1000]"
+      >
+        <ul class="flex flex-col items-center p-16">
+          <li><a href="" class="text-xl font-semibold">Home</a></li>
+          <li><a href="#about" class="text-xl font-semibold">About</a></li>
+          <li><a href="#goals" class="text-xl font-semibold">Goals</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      style="
+        background-image: url('./images/2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+      class="h-screen w-full mt-[-126px]"
+    >
+      <div class="h-screen w-full p-4 grid place-items-center">
+        <div class="text-center">
+          <div class="flex justify-center md:text-[200px] text-[100px]">
+            <h1 id="s" class="font-extrabold">S</h1>
+            <h1 id="d" class="font-extrabold">D</h1>
+            <h1 id="g" class="font-extrabold">G</h1>
+            <h1 id="one" class="font-extrabold">1</h1>
+            <h1 id="seven" class="font-extrabold">7</h1>
+          </div>
+
+       
+
+          <p 
+            style="
+              color: black;
+              font-weight: bold;
+              letter-spacing: 5px;
+              font-size: 1rem;
+            "
+          >
+            BUILDING A BETTER TOMORROW, TOGETHER.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION-->
+    <section
+    id="about"
+      class=""
+      style="
+        background-image: url('/images/about-bg (1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="container px-9 py-16 mx-auto ">
+        <div
+          class="grid place-items-center content-center gap-16 md:grid-cols-2"
+        >
+          <img src="/images/future.png" alt="" class="md:size-[550px]" />
+          <div class="font-medium">
+            <h1 class="" style="font-size: 2.5rem; margin-bottom: 2rem; border-bottom: 5px solid blue; width: 10%; font-weight: bolder;">ABOUT</h1>
+            <p
+              style="text-align: justify; text-justify: inter-word"
+              class="text-black md:text-lg mb-8"
+            >
+              In today's rapidly changing world, we face unprecedented
+              challenges, from climate change and poverty to inequality and
+              environmental degradation. The UN Sustainable Development Goals
+              (SDGs) offer a comprehensive blueprint to address these challenges
+              and create a brighter future for generations to come.
+            </p>
+            <p
+              style="text-align: justify; text-justify: inter-word; margin-bottom: 2rem;"
+              class="text-black md:text-lg"
+            >
+              SDG 17 recognizes that achieving these ambitious objectives
+              requires a global collective effort. It acknowledges that no
+              single country, organization, or individual can achieve
+              sustainable development alone. It calls for collaboration,
+              innovation, and a shared commitment from governments, businesses,
+              civil society, and individuals to work together towards a common
+              purpose.
+            </p>
+
+            <li id="future" class="" style="color: white; border: 1px solid blue; padding: 1rem 3rem; transition: .3s; background-color: blue;">
+              Get Started</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- COUNTERS -->
+      <section class="" style="background-image: url(images/count.png); background-size: cover;">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row flex-wrap justify-between max-w-screen-md gap-12" >
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-6xl" style="color: rgb(1, 53, 1); font-weight: bolder;">169</h1>
+            <p class="font-sans" style="font-size: 1.5rem; color: rgb(2, 1, 53);  font-weight: bold;">Targets</p>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-6xl" style="color: rgb(1, 53, 1); font-weight: bolder;">3886</h1>
+            <p class="font-normal  " style="font-size: 1.5rem; color: rgb(2, 1, 53);  font-weight: bold;">Events</p>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-6xl" style="color: rgb(2, 1, 53); font-weight: bolder;">1348</h1>
+            <p class="font-normal " style="font-size: 1.5rem; color: rgb(1, 53, 1); font-weight: bold;">Publications</p>
+          </div> <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-6xl" style="color: rgb(2, 1, 53); font-weight: bolder;">7815</h1>  
+            <p class="font-normal " style="font-size: 1.5rem; color: rgb(1, 53, 1); font-weight: bold;">Actions</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- ROTATING SLIDER -->
+    <section class="bg-green-200" id="goals">
+      <!-- dito vh -->
+      <div
+      
+        class="grid place-items-center py-16 px-4 bg-red-300 overflow-hidden container max-w-[100%] mx-auto md:h-screen relative"
+        style="
+          background-image: url(images/bilog-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div 
+          class="w-full flex flex-col-reverse gap-[10rem] md:gap-64 md:flex-row items-center md:mr-[-200px] "
+        >
+          <!-- Swiper -->
+          <div class="swiper mySwiper h-fit w-[300px] md:w-[500px] ">
+              <h1 class=" text-black" style="font-size: 1rem;
+             font-weight: bolder; margin-bottom: 1rem; border-bottom: 3px solid green; width: 20%;">SDG GOALS</h1>
+
+            <div class="swiper-wrapper text-justify">
+
+              <div class="swiper-slide gap-8 " >
+                <!-- 1 -->
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> End Poverty </span><br><br>
+                    This goal aims to eradicate extreme poverty and reduce the overall poverty rate by half. It focuses on ensuring basic needs and essential resources are accessible to all, regardless of income. This goal also promotes implementing social protection systems and equal opportunities for everyone to participate in the economy.
+                </p>
+            </div>
+            
+            <div class="swiper-slide"> 
+                <!-- 2 -->
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Zero Hunger </span><br><br>
+                    This goal seeks to end hunger and ensure everyone has access to safe, nutritious, and affordable food year-round. Supporting small-scale farmers and promoting sustainable agricultural practices are crucial for increasing food production. Additionally, addressing the root causes of hunger, like poverty, inequality, and climate change, is essential for creating a lasting solution.
+                </p>
+            </div>
+
+             <!-- 3 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Good Health and Well-being </span><br><br>
+                    This goal emphasizes ensuring healthy lives and promoting well-being for all ages. It focuses on improving maternal and child health, tackling communicable and non-communicable diseases, and addressing mental health concerns. Achieving universal health coverage and providing access to affordable, quality healthcare services is key. Additionally, supporting the development of medicines and vaccines and improving access to essential healthcare products is crucial for overall health improvement.
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Quality Education </span><br><br>
+                    This goal aims to ensure everyone has access to inclusive and equitable quality education throughout their lives. Increasing access to primary and secondary education, particularly for girls and marginalized groups, is crucial. This goal also emphasizes the development of knowledge and skills necessary for promoting sustainable development and fostering global citizenship.
+                </p>
+            </div>
+
+            <!-- 5 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Gender Equality </span><br><br>
+                    This goal seeks to achieve gender equality and empower all women and girls. It focuses on eliminating all forms of discrimination against women and girls, promoting their full and equal participation in society, and ensuring their access to economic resources, education, and healthcare.
+                </p>
+            </div>
+
+            <!-- 6 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Clean Water and Sanitation </span><br><br>
+                    This goal aims to ensure universal and equitable access to safe and affordable drinking water for all, and to improve sanitation and hygiene facilities, ending open defecation. This includes sustainable management of water resources and wastewater treatment.
+                </p>
+            </div>
+
+            <!-- 7 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Affordable and Clean Energy </span><br><br>
+                    This goal focuses on ensuring access to affordable, reliable, sustainable, and modern energy for all. It requires transitioning to renewable energy sources, improving energy efficiency, and expanding infrastructure and technology for clean energy access.
+                </p>
+            </div>
+
+            <!-- 8 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Decent Work and Economic Growth </span><br><br>
+                    This goal promotes sustained economic growth and decent work for all. It aims to achieve full and productive employment and decent work for all women and men, including young people and people with disabilities. This requires promoting policies that support entrepreneurship, job creation, and labor rights.
+                </p>
+            </div>
+
+            <!-- 9 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Industry, Innovation, and Infrastructure </span><br><br>
+                    This goal aims to build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation. This includes developing sustainable infrastructure, promoting responsible manufacturing, and encouraging scientific research and technological development.
+                </p>
+            </div>
+
+            <!-- 10 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Reduced Inequalities </span><br><br>
+                    This goal seeks to reduce inequality within and among countries. It focuses on achieving equal opportunities and outcomes for all, regardless of their income, ethnicity, gender, or any other factor. This requires addressing income inequality, promoting social inclusion, and empowering marginalized groups.
+                </p>
+            </div>
+
+            <!-- 11 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Sustainable Cities and Communities </span><br><br>
+                    This goal aims to make cities and human settlements inclusive, safe, resilient, and sustainable. It focuses on providing affordable housing and basic services, improving urban planning and management, and promoting sustainable practices in cities.
+                </p>
+            </div>
+
+            <!-- 12 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Responsible Consumption and Production </span><br><br>
+                    This goal promotes sustainable consumption and production patterns. It aims to decouple economic growth from environmental degradation, reduce waste generation, and encourage responsible use of resources.
+                </p>
+            </div>
+
+            <!-- 13 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Climate Action </span><br><br>
+                    This goal urges taking urgent action to combat climate change and its impacts. It focuses on strengthening global efforts to address climate change by reducing greenhouse gas emissions and building resilience to climate impacts.
+                </p>
+            </div>
+
+            <!-- 14 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Life Below Water </span><br><br>
+                    This goal seeks to conserve and sustainably use the oceans, seas, and marine resources for sustainable development. It focuses on protecting marine ecosystems, reducing pollution, and addressing the impacts of climate change on the ocean.
+                </p>
+            </div>
+
+            <!-- 15 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Life on Land </span><br><br>
+                    This goal aims to protect, restore, and sustainably use terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation, and halt biodiversity loss.
+                </p>
+            </div>
+
+            <!-- 16 -->
+            <div class="swiper-slide"> 
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Peace, Justice and Strong Institutions </span><br><br>
+                    This goal promotes peaceful and inclusive societies for sustainable development, providing access to justice for all and building effective, accountable and inclusive institutions at all levels.
+                </p>
+            </div>
+
+            <!-- 17 -->
+            <div class="swiper-slide">
+                <p class="font-medium text-black md:text-lg"><span style="font-size: 2rem;" class="font-extrabold"> Partnerships for the Goals </span><br><br>
+                    This goal emphasizes the importance of global partnerships and international cooperation in achieving the SDGs. It calls for mobilizing financial resources, sharing knowledge and technology, and building capacity to achieve the goals for a sustainable future.
+                </p>
+            </div>
+
+            </div>
+            <div id="next" class="swiper-button-next invisible"></div>
+            <div id="previous" class="swiper-button-prev invisible"></div>
+          </div>
+
+         <!-- Swiper2 circle image inside circle-->
+
+        <div class="  w-[300px] md:w-[500px] grid place-items-center relative hover:scale-110 transition-all duration-100">
+          <div class="swiper mySwiper2 size-[150px] md:size-[380px]  rounded-full">
+            <div class="swiper-wrapper absolute left-0">
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/1.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/2.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/3.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/4.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/5.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/6.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/7.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/8.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/9.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/10.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/11.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/12.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/13.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/14.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/15.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/16.jpg" class="size-full object-cover" />
+              </div>
+              <div class="swiper-slide grid place-items-center absolute left-0">
+                <img src="images/bg/17.jpg" class="size-full object-cover" />
+              </div>
+            </div>
+            <div id="img-next" class="swiper-button-next invisible"></div>
+            <div id="img-previous" class="swiper-button-prev invisible"></div>
+          </div>
+          <img
+            src="images/sirkol-removebg.png"
+            alt=""
+            id="sirkol"
+            class="rounded-full size-[300px] md:size-[500px] md:scale-150 transition-all duration-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 hover:shadow-green-700 hover:shadow-md"
+          />
+          <div class="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-transparent z-[1000] ">
+            <div id="top" class="w-full h-[150px] md:h-[250px] absolute top-0"></div>
+            <div id="bottom" class="w-full h-[150px] md:h-[250px] absolute bottom-0"></div>
+          </div>
+        </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+      
+      <section class="" style="background-image: url(images/footer.png); background-size: cover; background-repeat: no-repeat;">
+          <div class="container  mx-4 py-8" style="margin-right: auto; margin-left: auto;">
+            <div class="flex justify-center gap-8">
+              <i class="fa fa-2x fa-facebook-square " aria-hidden="true" style="color: white;"></i>
+              <i class="fa fa-2x fa-instagram " aria-hidden="true" style="color: white;"></i>
+              <i class="fa fa-2x fa-twitter " aria-hidden="true" style="color: white;" ></i>
+              <i class="fa fa-2x fa-github " aria-hidden="true" style="color: white;"></i>
+              <i class="fa fa-2x fa-envelope " aria-hidden="true" style="color: white;" ></i>
+            </div>
+          </div>
+          <hr class="w-1" style="width: 20%; margin: 0 auto; margin-bottom: 1rem;">
+          <div class="text-white font-normal text-sm text-center" style="padding-bottom: 2rem; padding-top: 1rem;">Arago and Salcedo | LSPU-SPCC CSS DEPARTMENT</div>
+      </section>
+       
+
+    <!-- SCROLL TO TOP BUTTON WHEN YOU ARE NOT ON THE HOME PAGE -->
+    <button id="scrollToTop" onclick="scrollToTop()" class="text-white rounded-full bg-blue-500 text-2xl size-[50px] font-bold fixed bottom-[10px] right-[10px]">↑</button>
+
+    <!-- SCRIPT FOR SCROLL TO TOP FUNCTION -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var scrollToTopBtn = document.getElementById("scrollToTop");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      }
+
+      function scrollToTop() {
+        var currentPosition =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentPosition > 0) {
+          window.scrollTo(0, 0); 
+        }
+      }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: '.swiper-button-prev',
+        
+        },
+      });
+    </script>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="index.js"></script>
+      
+  </body>
+</html>
