@@ -5,6 +5,7 @@
 * {
   scroll-behavior: smooth;
 }
+
 .test {
   width: 50px;
   height: 50px;
@@ -12,8 +13,8 @@
   transform: rotate(180deg);
   transform: matrix();
 }
-.swiper {
-}
+
+.swiper {}
 
 .swiper-slide {
   background-position: center;
@@ -25,6 +26,7 @@
 .swiper-slide img {
   display: block;
 }
+
 /* SDG17 BACKGROUND */
 #s,
 #d,
@@ -42,21 +44,27 @@
   -webkit-font-smoothing: antialiased;
   background-size: cover;
 }
+
 #s {
-  background-image: url("/images/letter/1.png");
+  background-image: url("images/letter/1.png");
 }
+
 #d {
-  background-image: url("/images/letter/2.png");
+  background-image: url("images/letter/2.png");
 }
+
 #g {
-  background-image: url("/images/letter/3.png");
+  background-image: url("images/letter/3.png");
 }
+
 #one {
-  background-image: url("/images/letter/4.png");
+  background-image: url("images/letter/4.png");
 }
+
 #seven {
-  background-image: url("/images/letter/5.png");
+  background-image: url("images/letter/5.png");
 }
+
 /* links hover */
 body,
 html {
@@ -70,6 +78,7 @@ li {
   position: relative;
   padding: 15px 0;
 }
+
 a {
   color: #fff;
   text-transform: uppercase;
@@ -81,6 +90,7 @@ a {
   padding-top: 0px;
   position: relative;
 }
+
 a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -93,6 +103,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 a:hover:after {
   width: 100%;
   left: 0;
@@ -111,5 +122,3 @@ a:hover:after {
     @apply bg-blue-400 w-[100px] h-[50px] text-center absolute translate-x-[-50%] translate-y-[-100%] skew-x-12;
   }
 }
-
-
